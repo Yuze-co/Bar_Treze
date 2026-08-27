@@ -57,25 +57,32 @@
     revealEls.forEach(function (el) { el.classList.add("in-view"); });
   }
 
-  /* ---------- Parallax sutil del hero ---------- */
+  /* ---------- Parallax sutil del hero (suavizado con lerp) ---------- */
   var heroImg = document.getElementById("heroImg");
   if (heroImg && !reduceMotion) {
+    var heroTarget = 0;
+    var heroCurrent = 0;
+    function tickHero() {
+      heroCurrent += (heroTarget - heroCurrent) * 0.08;
+      heroImg.style.transform = "scale(1.08) translateY(" + heroCurrent + "px)";
+      requestAnimationFrame(tickHero);
+    }
     window.addEventListener(
       "scroll",
       function () {
         var y = window.scrollY;
-        if (y < window.innerHeight) {
-          heroImg.style.transform = "scale(1.08) translateY(" + y * 0.12 + "px)";
-        }
+        heroTarget = y < window.innerHeight ? y * 0.12 : heroTarget;
       },
       { passive: true }
     );
+    requestAnimationFrame(tickHero);
   }
 
   /* ---------- Día / noche: transición ligada al scroll ---------- */
   var dnSection = document.getElementById("daynight");
   var dnNight = document.getElementById("dnNight");
   var dnOrb = document.getElementById("dnOrb");
+  var dnStars = document.getElementById("dnStars");
   var wordDay = document.querySelector(".dn-word-day");
   var wordNight = document.querySelector(".dn-word-night");
 
@@ -90,6 +97,7 @@
     dnNight.style.opacity = progress;
     wordDay.style.opacity = 1 - progress;
     wordNight.style.opacity = progress;
+    if (dnStars) dnStars.style.opacity = Math.max(0, (progress - 0.45) / 0.4);
 
     // El "sol" recorre un pequeño arco y se convierte en "luna" (color) al final
     var arcX = 10 + progress * 78; // % horizontal
