@@ -2,39 +2,453 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nexa Studios — Diseño y desarrollo web de alto nivel</title>
-<meta name="description" content="Nexa Studios diseña y desarrolla páginas web premium: rápidas, elegantes y hechas para convertir.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bartreze Barcelona | El lugar que despierta los sentidos</title>
+<meta name="description" content="Bartreze, un oasis en Barcelona donde disfrutar sin prisa de desayunos, comidas, cenas, cócteles y más de 180 tipos de ginebra.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.bartrezebcn.com/">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Bartreze Barcelona">
+<meta property="og:title" content="Bartreze Barcelona | El lugar que despierta los sentidos">
+<meta property="og:description" content="Un oasis en medio de la ciudad, donde el tiempo se disfruta sin prisa. Desayuno, comida, cena y coctelería en Sarrià, Barcelona.">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:url" content="https://www.bartrezebcn.com/">
+<meta property="og:image" content="https://static.wixstatic.com/media/c66b7a_37b0eb355f3748db94b2d5f83e64fdb0~mv2.jpeg">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bartreze Barcelona | El lugar que despierta los sentidos">
+<meta name="twitter:description" content="Un oasis en medio de la ciudad, donde el tiempo se disfruta sin prisa.">
+<meta name="twitter:image" content="https://static.wixstatic.com/media/c66b7a_37b0eb355f3748db94b2d5f83e64fdb0~mv2.jpeg">
+
+<!-- Favicon (monograma B, inline SVG) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E1B16'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' fill='%23E4C77E' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Bartreze",
+  "image": "https://static.wixstatic.com/media/c66b7a_37b0eb355f3748db94b2d5f83e64fdb0~mv2.jpeg",
+  "url": "https://www.bartrezebcn.com/",
+  "telephone": "+34932506499",
+  "email": "bartreze@outlook.es",
+  "servesCuisine": "Mediterránea",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Carrer Major de Sarrià, 115",
+    "addressLocality": "Barcelona",
+    "postalCode": "08017",
+    "addressCountry": "ES"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "09:00",
+    "closes": "01:00"
+  },
+  "sameAs": ["https://www.instagram.com/bartreze/"]
+}
+</script>
 </head>
 <body>
-<div class="loader" id="loader"><div class="loader-mark">N</div><div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div></div>
-<div class="grain"></div><div class="progress-line" id="progressLine"></div><div class="cursor-dot" id="cursorDot"></div><div class="cursor-ring" id="cursorRing"></div>
-<nav class="navbar" id="navbar"><a class="logo-slot" href="#inicio"><span class="logo-mark">N</span>Nexa Studios</a><div class="nav-links" id="navLinks"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#enfoque">Enfoque</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a></div><a href="#contacto" class="nav-cta magnetic">Solicitar presupuesto</a><button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span class="sr-only">Menú</span></button></nav>
-<header class="hero" id="inicio"><canvas class="hero-canvas" id="heroCanvas"></canvas><div class="hero-glow"></div><div class="hero-content"><span class="eyebrow">Diseño &amp; desarrollo web premium</span><h1 class="split-title"><span class="line">Webs que parecen</span><span class="line">hechas por <em>otro planeta</em>.</span></h1><p class="reveal-fade">En Nexa Studios diseñamos y desarrollamos páginas web a medida que combinan estética de estudio internacional con una obsesión total por la conversión. Sin plantillas. Sin genérico.</p><div class="hero-actions reveal-fade"><a href="#contacto" class="btn btn-primary magnetic">Solicitar presupuesto</a><a href="#servicios" class="btn btn-ghost magnetic">Ver servicios</a></div></div><div class="scroll-cue"><span>SCROLL</span><div class="line"></div></div></header>
-<section class="benefits"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">Por qué Nexa</span><h2>Cada detalle, pensado<br>para generar confianza.</h2><p>No vendemos páginas web. Construimos la primera impresión de tu marca en internet, y la hacemos memorable.</p></div><div class="benefit-grid">
-<article class="benefit-card reveal tilt"><div class="benefit-icon">⚡</div><h3>Velocidad real</h3><p>Código propio, sin frameworks pesados. Tu web carga en un parpadeo.</p><span class="card-index mono">01</span></article>
-<article class="benefit-card reveal tilt"><div class="benefit-icon">✦</div><h3>Diseño 100% original</h3><p>Nada de plantillas reutilizadas. Cada proyecto parte de cero.</p><span class="card-index mono">02</span></article>
-<article class="benefit-card reveal tilt"><div class="benefit-icon">◎</div><h3>Pensada para vender</h3><p>Cada sección tiene un objetivo claro: convertir visitas en clientes.</p><span class="card-index mono">03</span></article>
-<article class="benefit-card reveal tilt"><div class="benefit-icon">⌘</div><h3>SEO desde el código</h3><p>Estructura semántica y rendimiento optimizado desde el primer día.</p><span class="card-index mono">04</span></article>
-<article class="benefit-card reveal tilt"><div class="benefit-icon">↗</div><h3>Escalable</h3><p>Arquitectura limpia que crece contigo y con tu negocio.</p><span class="card-index mono">05</span></article>
-<article class="benefit-card reveal tilt"><div class="benefit-icon">✓</div><h3>Acompañamiento real</h3><p>Mantenimiento y soporte tras el lanzamiento.</p><span class="card-index mono">06</span></article>
-</div></div></section>
-<section class="services" id="servicios"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">Servicios</span><h2>Todo lo que tu marca<br>necesita en internet.</h2></div><div class="service-list reveal">
-<div class="service-row"><span class="service-num mono">01</span><div class="service-main"><h3>Diseño web</h3><p>Webs corporativas a medida, con identidad visual propia y experiencia cuidada.</p></div><div class="service-arrow">↗</div></div>
-<div class="service-row"><span class="service-num mono">02</span><div class="service-main"><h3>Landing Pages</h3><p>Páginas diseñadas con un único objetivo: convertir tráfico en clientes.</p></div><div class="service-arrow">↗</div></div>
-<div class="service-row"><span class="service-num mono">03</span><div class="service-main"><h3>Tiendas online</h3><p>Ecommerce rápidos y seguros, listos para vender sin fricción.</p></div><div class="service-arrow">↗</div></div>
-<div class="service-row"><span class="service-num mono">04</span><div class="service-main"><h3>Optimización SEO</h3><p>Estructura, velocidad y contenido para que Google te encuentre.</p></div><div class="service-arrow">↗</div></div>
-</div></div></section>
-<section class="process" id="proceso"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">Proceso</span><h2>Un proceso claro,<br>sin sorpresas.</h2><p>Cuatro etapas ordenadas para saber siempre dónde está tu proyecto.</p></div><div class="timeline"><div class="step reveal"><div class="step-dot mono">01</div><div class="step-body"><h3>Descubrimiento</h3><p>Analizamos tu marca, tu sector y tus objetivos antes de diseñar nada.</p></div></div><div class="step reveal"><div class="step-dot mono">02</div><div class="step-body"><h3>Diseño</h3><p>Creamos una propuesta visual única y la revisamos juntos.</p></div></div><div class="step reveal"><div class="step-dot mono">03</div><div class="step-body"><h3>Desarrollo</h3><p>Programamos la web cuidando cada animación y cada milisegundo.</p></div></div><div class="step reveal"><div class="step-dot mono">04</div><div class="step-body"><h3>Lanzamiento</h3><p>Publicamos, optimizamos y te acompañamos después del despegue.</p></div></div></div></div></section>
-<section class="approach" id="enfoque"><div class="wrap approach-grid"><div class="approach-text reveal"><span class="eyebrow">Nuestro enfoque</span><h2>No diseñamos para <span class="hl">impresionar</span>.<br>Diseñamos para <span class="hl-gold">convencer</span>.</h2><p>Decidimos sección por sección qué merece moverse y qué merece quedarse quieto, para que cuando algo se mueva, el usuario le preste atención.</p></div><div class="approach-visual reveal"><div class="orbit-card"><div class="orbit-ring r1"></div><div class="orbit-ring r2"></div><div class="orbit-core mono">NEXA</div></div></div></div></section>
-<section class="stats"><div class="wrap"><div class="stat-grid"><div class="stat reveal"><div class="num" data-count="100">0</div><div class="lbl">% A MEDIDA</div></div><div class="stat reveal"><div class="num" data-count="60">0</div><div class="lbl">FPS CONSTANTES</div></div><div class="stat reveal"><div class="num" data-count="24">0</div><div class="lbl">H DE SOPORTE</div></div><div class="stat reveal"><div class="num" data-count="1.2" data-decimal="1">0</div><div class="lbl">S DE CARGA MEDIA</div></div></div></div></section>
-<section class="testimonials"><div class="wrap"><div class="section-head reveal centered"><span class="eyebrow">Testimonios</span><h2>Lo que dicen<br>nuestros clientes.</h2></div><div class="t-viewport reveal"><div class="t-track" id="tTrack"><div class="t-slide"><p class="t-quote">“La web superó cualquier expectativa. Cada animación se siente <span class="gold">intencional</span>, nada sobra.”</p><div class="t-person"><div class="t-avatar">M</div><div><strong>Marta R.</strong><small>Fundadora, estudio de arquitectura</small></div></div></div><div class="t-slide"><p class="t-quote">“Las consultas por formulario se han <span class="gold">multiplicado</span> desde el lanzamiento.”</p><div class="t-person"><div class="t-avatar">D</div><div><strong>David P.</strong><small>CEO, ecommerce de moda</small></div></div></div><div class="t-slide"><p class="t-quote">“El resultado está a otro <span class="gold">nivel</span>.”</p><div class="t-person"><div class="t-avatar">L</div><div><strong>Laura G.</strong><small>Directora de marketing</small></div></div></div></div><div class="t-dots" id="tDots"></div></div></div></section>
-<section class="faq" id="faq"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">Preguntas frecuentes</span><h2>Todo lo que necesitas<br>saber antes de empezar.</h2></div><div class="faq-list reveal"><div class="faq-item"><button class="faq-q">¿Cuánto tarda un proyecto?<span class="faq-plus"></span></button><div class="faq-a"><p>Una web corporativa suele estar lista entre 2 y 4 semanas desde la aprobación del diseño.</p></div></div><div class="faq-item"><button class="faq-q">¿Incluye mantenimiento?<span class="faq-plus"></span></button><div class="faq-a"><p>Ofrecemos planes de mantenimiento con actualizaciones, copias de seguridad y pequeños cambios.</p></div></div><div class="faq-item"><button class="faq-q">¿Cómo empiezo?<span class="faq-plus"></span></button><div class="faq-a"><p>Escríbenos desde el formulario y te enviaremos una propuesta inicial sin compromiso.</p></div></div></div></div></section>
-<section class="cta-final"><div class="wrap"><div class="cta-box reveal"><span class="eyebrow">Empecemos</span><h2>Tu marca merece una web<br>que esté a su altura.</h2><p>Cuéntanos tu proyecto y te enviaremos una propuesta a medida.</p><a href="#contacto" class="btn btn-primary magnetic">Solicitar presupuesto</a></div></div></section>
-<section class="contact" id="contacto"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">Contacto</span><h2>Hablemos de<br>tu proyecto.</h2></div><div class="contact-grid"><div class="contact-info reveal"><h3>Datos de contacto</h3><a href="mailto:yuzeye@gmail.com">yuzeye@gmail.com</a><a href="tel:+34670314932">670 31 49 32</a></div><form class="form reveal" id="contactForm"><div class="field"><label>Nombre</label><input required name="nombre" placeholder="Tu nombre"></div><div class="field"><label>Email</label><input required type="email" name="email" placeholder="tu@email.com"></div><div class="field"><label>Mensaje</label><textarea required name="mensaje" placeholder="Cuéntanos sobre tu proyecto..."></textarea></div><button class="btn btn-primary magnetic" type="submit">Enviar mensaje</button><p id="formStatus" class="form-status" role="status"></p></form></div></div></section>
-<footer><div class="wrap footer-row"><a class="logo-slot" href="#inicio"><span class="logo-mark">N</span>Nexa Studios</a><span>© <span id="year"></span> Nexa Studios. Todos los derechos reservados.</span></div></footer>
-<script src="script.js"></script>
-</body></html>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#inicio" class="logo">bartreze</a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#bartreze">Bartreze</a></li>
+        <li><a href="#desayuno">Desayuno</a></li>
+        <li><a href="#comida">Comida</a></li>
+        <li><a href="#cena">Cena</a></li>
+        <li><a href="#cocteleria">Coctelería</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contacto" class="btn btn-outline header-cta">Visítanos</a>
+
+    <button class="burger" id="burgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#bartreze">Bartreze</a></li>
+    <li><a href="#desayuno">Desayuno</a></li>
+    <li><a href="#comida">Comida</a></li>
+    <li><a href="#cena">Cena</a></li>
+    <li><a href="#cocteleria">Coctelería</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="#contacto" class="btn btn-solid">Visítanos</a>
+  <div class="mobile-nav-foot">
+    <span>Todos los días · 9:00h – 01:00h</span>
+    <a href="https://www.instagram.com/bartreze/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero-media">
+      <img src="https://static.wixstatic.com/media/c66b7a_37b0eb355f3748db94b2d5f83e64fdb0~mv2.jpeg/v1/fill/w_1450,h_1063,q_90,enc_avif,quality_auto/c66b7a_37b0eb355f3748db94b2d5f83e64fdb0~mv2.jpeg" alt="Interior y ambiente de Bartreze en Barcelona" class="hero-img" id="heroImg">
+      <div class="hero-scrim"></div>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow eyebrow-light">Carrer Major de Sarrià, 115 · Barcelona</p>
+      <h1 class="hero-title">Bartreze</h1>
+      <p class="hero-sub">el lugar que despierta los sentidos</p>
+      <div class="hero-ctas">
+        <a href="#bartreze" class="btn btn-solid">Descubre Bartreze</a>
+        <a href="#contacto" class="btn btn-ghost-light">Visítanos</a>
+      </div>
+    </div>
+    <a href="#bartreze" class="scroll-cue" aria-label="Desplázate para descubrir más">
+      <span class="scroll-cue-line"></span>
+      <span>scroll</span>
+    </a>
+  </section>
+
+  <!-- ============ INTRODUCCIÓN ============ -->
+  <section class="intro reveal" id="bartreze">
+    <div class="intro-grid">
+      <div class="intro-media">
+        <img src="https://static.wixstatic.com/media/c66b7a_3ece3cd1aa3c4f30b5579bd7feb9e321~mv2.jpeg/v1/fill/w_744,h_910,al_c,q_85,enc_avif,quality_auto/c66b7a_3ece3cd1aa3c4f30b5579bd7feb9e321~mv2.jpeg" alt="Detalle de producto en Bartreze" loading="lazy">
+      </div>
+      <div class="intro-text">
+        <p class="eyebrow">Descubre Bartreze</p>
+        <h2>Un oasis en medio de la ciudad,<br>donde el tiempo se disfruta sin prisa.</h2>
+        <p class="intro-lead">Ven a cualquier hora del día: siempre encontrarás lo que necesitas para desayunar, disfrutar de un aperitivo, comer, merendar, cenar o brindar con copas y cócteles.</p>
+        <ul class="intro-tags">
+          <li>Desayuno</li><li>Aperitivo</li><li>Comida</li><li>Merienda</li><li>Cena</li><li>Copas</li><li>Cócteles</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DÍA / NOCHE (elemento distintivo) ============ -->
+  <section class="daynight" id="daynight">
+    <div class="daynight-sticky">
+      <div class="daynight-media">
+        <img src="https://static.wixstatic.com/media/c66b7a_9bd5b9099b7347058f247c84a6dc1a97~mv2.jpeg/v1/fill/w_1512,h_1016,al_c,q_85,enc_avif,quality_auto/WhatsApp%20Image%202025-02-07%20at%2012_08_57%20(1).jpeg" alt="Bartreze de día" class="dn-img dn-day">
+        <img src="https://static.wixstatic.com/media/c66b7a_9bd5b9099b7347058f247c84a6dc1a97~mv2.jpeg/v1/fill/w_1512,h_1016,al_c,q_85,enc_avif,quality_auto/WhatsApp%20Image%202025-02-07%20at%2012_08_57%20(1).jpeg" alt="Bartreze de noche" class="dn-img dn-night" id="dnNight">
+        <div class="dn-scrim"></div>
+        <svg class="dn-orb" id="dnOrb" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
+          <circle cx="20" cy="20" r="16" />
+        </svg>
+      </div>
+      <div class="dn-copy">
+        <p class="dn-word dn-word-day">de día...</p>
+        <p class="dn-word dn-word-night">...y de noche</p>
+        <p class="dn-caption">el lugar donde disfrutar del buen producto, desde primera hora de la mañana hasta bien entrada la madrugada.</p>
+      </div>
+    </div>
+    <div class="daynight-spacer" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ HORARIO ============ -->
+  <section class="hours-band reveal">
+    <p>Abrimos <strong>todos los días</strong></p>
+    <p class="hours-time">9:00h <span>—</span> 01:00h</p>
+  </section>
+
+  <!-- ============ MOMENTOS ============ -->
+  <section class="momentos" aria-label="Momentos del día en Bartreze">
+    <div class="momentos-head reveal">
+      <p class="eyebrow">Un lugar para cada momento</p>
+      <h2>Cuatro maneras de disfrutar Bartreze</h2>
+    </div>
+    <div class="momentos-grid">
+
+      <article class="momento-card reveal placeholder-card" style="--pc:var(--gold)">
+        <div class="momento-media placeholder-media" data-label="Fotografía pendiente — desayuno">
+          <svg viewBox="0 0 48 48" class="ph-icon" aria-hidden="true"><path d="M10 18h22v10a11 11 0 0 1-11 11 11 11 0 0 1-11-11V18Z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M32 20h3a5 5 0 0 1 0 10h-3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M14 10c0 2-2 2-2 4M20 10c0 2-2 2-2 4M26 10c0 2-2 2-2 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <div class="momento-body">
+          <span class="momento-num">Mañana</span>
+          <h3>Desayuno</h3>
+          <p>Dulce y salado.</p>
+          <a href="#desayuno" class="momento-link">Descubrir</a>
+        </div>
+      </article>
+
+      <article class="momento-card reveal">
+        <div class="momento-media">
+          <img src="https://static.wixstatic.com/media/c66b7a_341d73100ab945f49cdab45ac4696fbc~mv2.jpeg/v1/fill/w_800,h_540,q_90,enc_avif,quality_auto/c66b7a_341d73100ab945f49cdab45ac4696fbc~mv2.jpeg" alt="Ambiente de comida en Bartreze" loading="lazy">
+        </div>
+        <div class="momento-body">
+          <span class="momento-num">Medio día</span>
+          <h3>Comida</h3>
+          <p>Fórmulas de medio día.</p>
+          <a href="#comida" class="momento-link">Descubrir</a>
+        </div>
+      </article>
+
+      <article class="momento-card reveal">
+        <div class="momento-media">
+          <img src="https://static.wixstatic.com/media/c66b7a_4df01ac07d4e4a97ab851ea5ab206355~mv2.jpeg/v1/fill/w_800,h_900,q_90,enc_avif,quality_auto/c66b7a_4df01ac07d4e4a97ab851ea5ab206355~mv2.jpeg" alt="Ambiente de cena en Bartreze" loading="lazy">
+        </div>
+        <div class="momento-body">
+          <span class="momento-num">Noche</span>
+          <h3>Cena</h3>
+          <p>Para todo tipo de ocasiones.</p>
+          <a href="#cena" class="momento-link">Descubrir</a>
+        </div>
+      </article>
+
+      <article class="momento-card reveal placeholder-card momento-dark" style="--pc:var(--wine)">
+        <div class="momento-media placeholder-media placeholder-media--dark" data-label="Fotografía pendiente — coctelería">
+          <svg viewBox="0 0 48 48" class="ph-icon" aria-hidden="true"><path d="M8 8h32l-14 16v14M18 38h12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="momento-body">
+          <span class="momento-num">Madrugada</span>
+          <h3>Coctelería</h3>
+          <p>+180 tipos de ginebra.</p>
+          <a href="#cocteleria" class="momento-link">Descubrir</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ DESAYUNO ============ -->
+  <section class="editorial" id="desayuno">
+    <div class="editorial-grid">
+      <div class="editorial-media reveal">
+        <img src="https://static.wixstatic.com/media/c66b7a_3ece3cd1aa3c4f30b5579bd7feb9e321~mv2.jpeg/v1/fill/w_820,h_1000,al_c,q_85,enc_avif,quality_auto/c66b7a_3ece3cd1aa3c4f30b5579bd7feb9e321~mv2.jpeg" alt="Desayuno en Bartreze" loading="lazy">
+      </div>
+      <div class="editorial-text reveal">
+        <p class="eyebrow">01 — Desde primera hora</p>
+        <h2 class="serif-xl">Desayuno</h2>
+        <p class="editorial-sub">Dulce y salado.</p>
+        <ul class="feature-list">
+          <li>Tostadas</li>
+          <li>Productos de la pastelería Foix</li>
+          <li>Cafés</li>
+          <li>Infusiones</li>
+          <li>Tés</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMIDA ============ -->
+  <section class="editorial editorial--reverse" id="comida">
+    <div class="editorial-grid">
+      <div class="editorial-text reveal">
+        <p class="eyebrow">02 — Medio día</p>
+        <h2 class="serif-xl">Comida</h2>
+        <p class="editorial-sub">Fórmulas de medio día.</p>
+        <p class="editorial-body">Para los que vienen con prisa o para los que pueden venir con calma.</p>
+      </div>
+      <div class="editorial-media reveal">
+        <img src="https://static.wixstatic.com/media/c66b7a_341d73100ab945f49cdab45ac4696fbc~mv2.jpeg/v1/fill/w_820,h_1000,al_c,q_90,enc_avif,quality_auto/c66b7a_341d73100ab945f49cdab45ac4696fbc~mv2.jpeg" alt="Comida en Bartreze" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CENA ============ -->
+  <section class="editorial editorial--dark" id="cena">
+    <div class="editorial-grid">
+      <div class="editorial-media reveal">
+        <img src="https://static.wixstatic.com/media/c66b7a_4df01ac07d4e4a97ab851ea5ab206355~mv2.jpeg/v1/fill/w_820,h_1000,al_c,q_90,enc_avif,quality_auto/c66b7a_4df01ac07d4e4a97ab851ea5ab206355~mv2.jpeg" alt="Cena en Bartreze" loading="lazy">
+      </div>
+      <div class="editorial-text reveal">
+        <p class="eyebrow eyebrow-light">03 — Al caer la tarde</p>
+        <h2 class="serif-xl serif-light">Cena</h2>
+        <p class="editorial-sub editorial-sub-light">Para todo tipo de ocasiones.</p>
+        <p class="editorial-body editorial-body-light">Disfruta de una buena cena con amigos, pareja o familia con nuestra selección de productos gourmet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COCTELERÍA ============ -->
+  <section class="cocteleria" id="cocteleria">
+    <div class="cocteleria-bg" aria-hidden="true"></div>
+    <div class="cocteleria-inner">
+      <p class="eyebrow eyebrow-light">04 — Madrugada</p>
+      <h2 class="serif-xl serif-light">Coctelería</h2>
+      <p class="cocteleria-stat"><span>+180</span>tipos de ginebra</p>
+      <p class="cocteleria-body">Barmans que te ayudarán a encontrar la mejor copa o cóctel en función de tus gustos.</p>
+
+      <div class="cocteleria-icons" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><path d="M8 8h32l-14 16v14M18 38h12" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 48 48"><rect x="16" y="6" width="16" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M18 16c-2 6-2 12 0 26h12c2-14 2-20 0-26" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="14" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M24 15v18M15 24h18" stroke="currentColor" stroke-width="1" opacity=".5"/></svg>
+        <svg viewBox="0 0 48 48"><path d="M14 6h20v8c0 6-4 9-10 9s-10-3-10-9V6ZM24 23v19M16 42h16" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </div>
+
+      <a href="#contacto" class="btn btn-solid btn-gold">Descubre nuestra coctelería</a>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE NOSOTROS ============ -->
+  <section class="about reveal" id="nosotros">
+    <div class="about-grid">
+      <div class="about-media">
+        <img class="about-img-1" src="https://static.wixstatic.com/media/c66b7a_634f9014559947639aeaa62c43da13a8~mv2.jpeg/v1/fill/w_700,h_734,al_c,lg_1,q_80,enc_avif,quality_auto/c66b7a_634f9014559947639aeaa62c43da13a8~mv2.jpeg" alt="Ambiente de Bartreze" loading="lazy">
+        <img class="about-img-2" src="https://static.wixstatic.com/media/c66b7a_1d548a40921e4cd1af843a56882daa46~mv2.jpeg/v1/fill/w_500,h_754,q_90,enc_avif,quality_auto/c66b7a_1d548a40921e4cd1af843a56882daa46~mv2.jpeg" alt="Detalle de Bartreze" loading="lazy">
+      </div>
+      <div class="about-text">
+        <p class="eyebrow">Sobre nosotros</p>
+        <h2 class="serif-xl">Mar y Oriol</h2>
+        <p>Bartreze nació en 2013 de la mano de Mar y Oriol, con el deseo de crear algo más que un bar: un lugar donde las cosas se hacen con cariño, con calma y con el cuidado de quien disfruta de cada detalle.</p>
+        <p>Un espacio pensado para que te sientas como en casa, donde cada plato, cada café y cada gesto llevan la huella de las cosas bien hechas.</p>
+        <p>Aquí todo invita a quedarse un poco más, a disfrutar sin prisa, a saborear la vida como merece.</p>
+
+        <div class="about-links">
+          <a href="https://trezemarket.es/" target="_blank" rel="noopener">Treze Market ↗</a>
+          <a href="https://www.instagram.com/bartrezesur/" target="_blank" rel="noopener">Bartreze Sur ↗</a>
+          <a href="https://www.airbnb.com/l/cIYvwTTS" target="_blank" rel="noopener">Trezehome, Cabo de Gata ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section class="gallery reveal" id="galeria" aria-label="Galería de imágenes">
+    <div class="momentos-head">
+      <p class="eyebrow">Galería</p>
+      <h2>Instantáneas de Bartreze</h2>
+    </div>
+    <div class="masonry">
+      <button class="masonry-item mi-a" data-full="https://static.wixstatic.com/media/c66b7a_37b0eb355f3748db94b2d5f83e64fdb0~mv2.jpeg/v1/fill/w_1450,h_1063,q_90,enc_avif,quality_auto/c66b7a_37b0eb355f3748db94b2d5f83e64fdb0~mv2.jpeg" aria-label="Ampliar imagen">
+        <img src="https://static.wixstatic.com/media/c66b7a_37b0eb355f3748db94b2d5f83e64fdb0~mv2.jpeg/v1/fill/w_900,h_660,q_85,enc_avif,quality_auto/c66b7a_37b0eb355f3748db94b2d5f83e64fdb0~mv2.jpeg" alt="Ambiente general de Bartreze" loading="lazy">
+      </button>
+      <button class="masonry-item mi-b" data-full="https://static.wixstatic.com/media/c66b7a_1d548a40921e4cd1af843a56882daa46~mv2.jpeg/v1/fill/w_900,h_1360,q_90,enc_avif,quality_auto/c66b7a_1d548a40921e4cd1af843a56882daa46~mv2.jpeg" aria-label="Ampliar imagen">
+        <img src="https://static.wixstatic.com/media/c66b7a_1d548a40921e4cd1af843a56882daa46~mv2.jpeg/v1/fill/w_500,h_754,q_90,enc_avif,quality_auto/c66b7a_1d548a40921e4cd1af843a56882daa46~mv2.jpeg" alt="Detalle de Bartreze" loading="lazy">
+      </button>
+      <button class="masonry-item mi-c" data-full="https://static.wixstatic.com/media/c66b7a_634f9014559947639aeaa62c43da13a8~mv2.jpeg/v1/fill/w_900,h_945,al_c,lg_1,q_85,enc_avif,quality_auto/c66b7a_634f9014559947639aeaa62c43da13a8~mv2.jpeg" aria-label="Ampliar imagen">
+        <img src="https://static.wixstatic.com/media/c66b7a_634f9014559947639aeaa62c43da13a8~mv2.jpeg/v1/fill/w_620,h_650,al_c,lg_1,q_80,enc_avif,quality_auto/c66b7a_634f9014559947639aeaa62c43da13a8~mv2.jpeg" alt="Ambiente de Bartreze" loading="lazy">
+      </button>
+      <button class="masonry-item mi-d" data-full="https://static.wixstatic.com/media/c66b7a_4df01ac07d4e4a97ab851ea5ab206355~mv2.jpeg/v1/fill/w_900,h_1010,q_90,enc_avif,quality_auto/c66b7a_4df01ac07d4e4a97ab851ea5ab206355~mv2.jpeg" aria-label="Ampliar imagen">
+        <img src="https://static.wixstatic.com/media/c66b7a_4df01ac07d4e4a97ab851ea5ab206355~mv2.jpeg/v1/fill/w_620,h_695,q_90,enc_avif,quality_auto/c66b7a_4df01ac07d4e4a97ab851ea5ab206355~mv2.jpeg" alt="Detalle gastronómico en Bartreze" loading="lazy">
+      </button>
+      <button class="masonry-item mi-e" data-full="https://static.wixstatic.com/media/c66b7a_341d73100ab945f49cdab45ac4696fbc~mv2.jpeg/v1/fill/w_900,h_610,q_90,enc_avif,quality_auto/c66b7a_341d73100ab945f49cdab45ac4696fbc~mv2.jpeg" aria-label="Ampliar imagen">
+        <img src="https://static.wixstatic.com/media/c66b7a_341d73100ab945f49cdab45ac4696fbc~mv2.jpeg/v1/fill/w_700,h_474,q_90,enc_avif,quality_auto/c66b7a_341d73100ab945f49cdab45ac4696fbc~mv2.jpeg" alt="Mesa en Bartreze" loading="lazy">
+      </button>
+      <button class="masonry-item mi-f" data-full="https://static.wixstatic.com/media/c66b7a_3ece3cd1aa3c4f30b5579bd7feb9e321~mv2.jpeg/v1/fill/w_900,h_1100,al_c,q_85,enc_avif,quality_auto/c66b7a_3ece3cd1aa3c4f30b5579bd7feb9e321~mv2.jpeg" aria-label="Ampliar imagen">
+        <img src="https://static.wixstatic.com/media/c66b7a_3ece3cd1aa3c4f30b5579bd7feb9e321~mv2.jpeg/v1/fill/w_540,h_660,al_c,q_85,enc_avif,quality_auto/c66b7a_3ece3cd1aa3c4f30b5579bd7feb9e321~mv2.jpeg" alt="Producto de Bartreze" loading="lazy">
+      </button>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <!-- ============ INSTAGRAM ============ -->
+  <section class="social reveal">
+    <div class="momentos-head">
+      <p class="eyebrow">Síguenos</p>
+      <h2>@bartreze en Instagram</h2>
+    </div>
+    <div class="social-grid" aria-label="Vista previa de nuestro Instagram">
+      <a class="social-tile" href="https://www.instagram.com/bartreze/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></a>
+      <a class="social-tile" href="https://www.instagram.com/bartreze/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></a>
+      <a class="social-tile" href="https://www.instagram.com/bartreze/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></a>
+      <a class="social-tile" href="https://www.instagram.com/bartreze/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></a>
+      <a class="social-tile" href="https://www.instagram.com/bartreze/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></a>
+      <a class="social-tile" href="https://www.instagram.com/bartreze/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></a>
+    </div>
+    <p class="social-note">Publicaciones no disponibles automáticamente — visita nuestro perfil para verlas todas.</p>
+  </section>
+
+  <!-- ============ UBICACIÓN / CONTACTO ============ -->
+  <section class="location" id="contacto">
+    <div class="location-grid">
+      <div class="location-text reveal">
+        <p class="eyebrow eyebrow-light">Visítanos</p>
+        <h2 class="serif-xl serif-light">Te esperamos en Sarrià</h2>
+        <address>
+          Carrer Major de Sarrià, 115<br>
+          Barcelona, 08017
+        </address>
+        <p class="location-detail">Tel. <a href="tel:+34932506499">932 50 64 99</a></p>
+        <p class="location-detail"><a href="mailto:bartreze@outlook.es">bartreze@outlook.es</a></p>
+        <p class="location-detail">Todos los días · 9:00h – 01:00h</p>
+
+        <div class="location-ctas">
+          <a class="btn btn-solid btn-gold" href="https://www.google.com/maps/dir/?api=1&destination=Carrer+Major+de+Sarri%C3%A0+115+Barcelona+08017" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-ghost-light" href="tel:+34932506499">Llamar</a>
+          <a class="btn btn-ghost-light" href="https://www.instagram.com/bartreze/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="location-map reveal">
+        <iframe
+          title="Mapa de ubicación de Bartreze, Carrer Major de Sarrià 115, Barcelona"
+          src="https://www.google.com/maps?q=Carrer+Major+de+Sarri%C3%A0+115,+08017+Barcelona&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <p class="footer-logo">bartreze</p>
+      <p class="footer-claim">el lugar que despierta los sentidos</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Enlaces del pie de página">
+      <a href="#inicio">Inicio</a>
+      <a href="#bartreze">Bartreze</a>
+      <a href="#desayuno">Desayuno</a>
+      <a href="#comida">Comida</a>
+      <a href="#cena">Cena</a>
+      <a href="#cocteleria">Coctelería</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="footer-contact">
+      <p>Carrer Major de Sarrià, 115<br>Barcelona, 08017</p>
+      <p><a href="tel:+34932506499">932 50 64 99</a></p>
+      <p><a href="mailto:bartreze@outlook.es">bartreze@outlook.es</a></p>
+      <p><a href="https://www.instagram.com/bartreze/" target="_blank" rel="noopener">Instagram</a></p>
+      <p class="footer-hours">Todos los días<br>9:00h — 01:00h</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Bartreze</span>
+    <span class="footer-related">
+      <a href="https://www.instagram.com/bartrezesur/" target="_blank" rel="noopener">Bartreze Sur</a> ·
+      <a href="https://trezemarket.es/" target="_blank" rel="noopener">Treze Market</a> ·
+      <a href="https://www.airbnb.com/l/cIYvwTTS" target="_blank" rel="noopener">Trezehome, Cabo de Gata</a>
+    </span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
